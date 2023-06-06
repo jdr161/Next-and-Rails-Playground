@@ -7,7 +7,7 @@ export default function Home() {
   const [ text, setText ] = useState("output");
   const callAPI = async () => {
     try {
-      const response = await axios.get('https://jsonplaceholder.typicode.com/todos/1');
+      const response = await axios.get('https://jsonplaceholder.typicode.com/users/1/posts');
       setText(JSON.stringify(response));
       console.log(response);
     } catch (error) {
